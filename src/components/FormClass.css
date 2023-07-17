@@ -1,0 +1,83 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+}
+.body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* background-color: aqua; */
+}
+h1{
+    text-align: center;
+}
+.body-container > form{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* background-color: rgb(255, 0, 0); */
+}
+.body-container > form > label{
+    font-size: 24px;
+}
+.body-container > form > input{
+    /* box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px;   */
+    border: 2px solid lightgray;
+    height: 40px;
+    width: 250px;
+    border-radius: 25px;
+    text-align: center;
+   
+    
+}
+.css-button-neumorphic {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #efefef;
+    box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+    color: #585858;
+}
+.css-button-neumorphic:active {
+    box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+.display-container{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    width: 1000px;
+    flex-wrap:wrap;
+    gap: 50px;
+    padding: 20px;
+    margin-top: 50px;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+.elements-container{
+    min-width: 450px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
