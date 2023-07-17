@@ -23,9 +23,7 @@ export default class FormClass extends Component {
         this.state.EmpData.push(newObj);
         this.setState({EmpData : this.state.EmpData})
         console.log(this.state.EmpData)
-        this.state.Name = '';
-        this.state.Dept = '';
-        this.state.Rating = '';
+        
     }
   render() {
     return (
