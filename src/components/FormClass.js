@@ -10,9 +10,6 @@ export default class FormClass extends Component {
     }
     changeHandle=(event)=>{
         this.setState({[event.target.name] : event.target.value})
-        // console.log(this.state.Name);
-        // console.log(this.state.Dept);
-        // console.log(this.state.Rating);
     }
     clickHandle=()=>{
         let newObj={
@@ -22,7 +19,7 @@ export default class FormClass extends Component {
         }
         this.state.EmpData.push(newObj);
         this.setState({EmpData : this.state.EmpData});
-        console.log(this.state.EmpData);
+        // console.log(this.state.EmpData);
         this.setState({Name : ''});
         this.setState({Dept : ''});
         this.setState({Rating : ''});
@@ -51,7 +48,7 @@ export default class FormClass extends Component {
             <div className='display-container'>
             {this.state.EmpData.map((item,index) =>{
                 return(
-                    <div className='elements-container'>
+                    <div className='elements-container' key={index}>
                         <div>Name: {item.name} | Department: {item.dept} | Rating: {item.rating}</div>
                         
                     </div>
