@@ -21,9 +21,13 @@ export default class FormClass extends Component {
             rating:this.state.Rating
         }
         this.state.EmpData.push(newObj);
-        this.setState({EmpData : this.state.EmpData})
-        console.log(this.state.EmpData)
+        this.setState({EmpData : this.state.EmpData});
+        console.log(this.state.EmpData);
+        this.setState({Name : ''});
+        this.setState({Dept : ''});
+        this.setState({Rating : ''});
         
+
     }
   render() {
     return (
